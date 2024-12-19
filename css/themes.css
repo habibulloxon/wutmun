@@ -1,0 +1,116 @@
+/* Container Styling */
+.themes {
+  width: 80%;
+  margin: 100px auto 0;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title h2 {
+  color: var(--black);
+  font-size: clamp(34px, 2.6vw, 60px);
+  white-space: nowrap;
+}
+
+.stroke {
+  width: calc(75% - 38px);
+  height: 4px;
+  background-color: var(--yellow);
+}
+
+/* Grid Layout */
+.themes-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+  margin-top: 40px;
+}
+
+/* Tab Styling */
+.tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--grey);
+  border-radius: 20px;
+  padding: 12px;
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden; /* Prevent content from spilling out */
+  transition: background 0.3s ease-in-out;
+}
+
+.tab:hover {
+  background: var(--primary-dark);
+  cursor: pointer;
+}
+
+/* Title Text Styling */
+.tab p:first-of-type {
+  color: var(--primary);
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-size: clamp(20px, 1.354vw, 30px);
+  opacity: 1;
+  transform: translateY(0); /* Center by default */
+  position: absolute; /* Position the title in the center */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Description Text Styling */
+.tab p ~ p {
+  display: block;
+  color: var(--white);
+  text-align: center;
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: clamp(16px, 1.5vw, 40px); /* Larger font size for hover text */
+  font-weight: 100;
+  opacity: 0;
+  transform: scale(0.8); /* Start smaller */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.tab:hover p:first-of-type {
+  opacity: 0;
+  transform: translateY(-10px); /* Slight upward movement for disappearing text */
+}
+
+.tab:hover p ~ p {
+  opacity: 1;
+  transform: scale(1); /* Fully visible and enlarged */
+}
+
+/* Responsive Design */
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+  .themes {
+    width: 90%;
+    margin: 80px auto 0;
+  }
+
+  .themes-tabs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+  }
+
+  .tab {
+    aspect-ratio: 1.5;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .themes-tabs {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+  }
+}

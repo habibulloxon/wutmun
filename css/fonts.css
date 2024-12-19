@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Franklin Gothic Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Franklin Gothic Regular'), url('FranklinGothic.woff') format('woff');
+  }
+
+body {
+  font-family: 'Franklin Gothic Medium', sans-serif;
+}

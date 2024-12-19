@@ -1,0 +1,94 @@
+.partners {
+  width: 80%;
+  margin: 200px auto 0;
+}
+
+.partners .title h2 {
+  font-size: clamp(34px, 2.6vw, 60px);
+  width: 20%;
+}
+
+.partners .title .stroke {
+  width: 90%;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.logos div {
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px; /* Adjust height as needed for consistency */
+}
+
+.logos div img {
+  margin-bottom: auto;
+}
+
+.logos div p {
+  margin-top: auto;
+}
+
+.logos img {
+  max-width: 100%;
+  height: auto;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+  .partners {
+    width: 90%;
+    margin: 80px auto 0;
+  }
+
+  .partners .title .stroke {
+    width: 60%;
+  }
+
+  .logos {
+    margin: 20px 0 10px;
+    grid-template-columns: 1fr; /* Stacks items vertically */
+    gap: 4px;
+  }
+
+  .logos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 2 / 1; /* Keeps a consistent height-to-width ratio */
+  }
+}
+
+/* Additional styling for larger screens (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .partners {
+    margin: 100px auto 0;
+  }
+
+  .partners .title .stroke {
+    width: 80%;
+  }
+
+  .logos {
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    gap: 8px;
+    width: 100%;
+  }
+
+  .logos div {
+    width: 100%; /* Ensures divs take full column width */
+  }
+}

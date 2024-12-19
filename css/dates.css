@@ -1,0 +1,117 @@
+.dates {
+  width: 80%;
+  margin: 200px auto 0;
+}
+
+.dates-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 40px 0;
+}
+
+.date {
+  display: flex;
+  padding: 30px;
+  align-items: flex-start;
+  gap: 10%;
+  align-self: stretch;
+  background-color: var(--grey);
+  border-radius: 20px;
+}
+
+.date-tablet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8%;
+  gap: 8px;
+  padding: 10px 0;
+  background-color: var(--yellow);
+  border-radius: 30px;
+}
+.date-tablet > p {
+  font-size: 22px;
+  margin: 0;
+}
+
+.date-tablet p {
+  color: var(--white, #FFF);
+  font-size: 14px;
+  margin: 0;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.event  h3 {
+  color: var(--blue, #024890);
+  font-size: 32px;
+  margin: 0;
+}
+
+.event p {
+  color: var(--black-80);
+  font-size: 16px;
+  margin: 0;
+  width: 60%;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+  .dates {
+    width: 90%;
+    margin: 80px auto 0;
+  }
+
+  .dates-list {
+    margin-top: 20px;
+  }
+
+  .date {
+    flex-direction: column;
+  }
+
+  .date-tablet {
+    display: flex;
+    width: 84px;
+    height: 34px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 12px;
+  }
+
+  .date-tablet p {
+    text-transform: uppercase;
+  }
+  .event {
+    margin-top: 8px;
+  }
+  .event h3 {
+    font-size: 24px;
+  }
+  .event p {
+    color: var(--black-80);
+    font-family: "Franklin Gothic Book", sans-serif;
+    width: 100%;
+    font-size: 14px;
+    font-style: normal;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .dates .title .stroke {
+    width: 65%;
+  } 
+  .date  {
+    flex-direction: row;
+  }
+  .dates {
+    margin: 100px auto 0;
+  }
+}
+

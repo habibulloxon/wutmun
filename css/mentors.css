@@ -1,0 +1,27 @@
+.mentors-team {
+  overflow: hidden;
+}
+
+.mentors-team .org-images div {
+  min-width: 20%;
+  position: relative;
+}
+
+.mentors-team .org-images div img {
+  width: 100%;
+}
+
+.mentors-team .org-images div div {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  border-radius: 100px;
+  aspect-ratio: 3/1;
+  background: var(--white);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 15px;
+  transition: all 0.7s ease;
+}

@@ -1,0 +1,136 @@
+.participants {
+  width: 80%;
+  margin: 200px auto 0;
+}
+
+.participants .title h2 {
+  font-size: clamp(34px, 2.6vw, 60px);
+  white-space: nowrap;
+}
+.participants .title .stroke {
+  width: 70%;
+} 
+
+.team-tablets {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0 10px;
+}
+
+.part-tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.part-tab h3 {
+  color: var(--primary);
+  text-align: center;
+  font-size: 18px;
+}
+
+.part-tab:hover {
+  background-color: var(--grey-hover);
+}
+
+.team-images {
+  width: 100%;
+  position: relative;
+}
+
+.team-images img {
+  max-width: 100%;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  border-radius: 8px;
+}
+
+.participants-names {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+}
+
+.participants-names div {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 4px 10px;
+}
+.participants-names div h4 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 18px;
+}
+
+.active_tab {
+  background-color: var(--primary);
+  color: #fff;
+  font-weight: bold;
+}
+
+.active_tab:hover {
+  background-color: var(--primary);
+}
+
+.active_tab h3 {
+  color: var(--white)
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+  .participants {
+    width: 90%;
+    margin: 80px auto 0;
+  }
+
+  .participants .title .stroke {
+    min-width: 15%;
+  }
+
+  .team-tablets {
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 20px;
+  }
+
+  .part-tab {
+    width:  calc(50% - 4px);
+    border-radius: 12px;
+    padding: 21px 19px;
+  }
+
+  .part-tab {
+    font-weight: 400;
+    font-family: "Franklin Gothic Book",sans-serif;
+  }
+
+  .participants-names {
+    display: none;
+  }
+  .team-images img {
+    aspect-ratio: 1.5/1;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .participants .title .stroke {
+    width: 60%;
+  }
+
+  .team-tablets {
+    flex-wrap: nowrap;
+  }
+
+  .part-tab {
+    width: calc(25%-8px);
+  }
+  .participants {
+    margin: 100px auto 0;
+  }
+}

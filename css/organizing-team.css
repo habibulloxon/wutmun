@@ -1,0 +1,241 @@
+.organizing-team {
+  width: 80%;
+  margin: 200px auto 0;
+  position: relative;
+}
+
+.org-tablets {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  width: 100%;
+}
+
+.org-tablet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--grey);
+  border-radius: 20px;
+  width: calc(25% - 12px);
+  aspect-ratio: 3/1;
+}
+
+.org-tablet:hover {
+  background-color: var(--grey-hover);
+}
+
+.org-tablet h3 {
+  color: var(--primary);
+  text-align: center;
+  font-size: 20px; 
+  margin: 0;
+}
+
+.org-tablet p {
+  color: var(--black-60, rgba(37, 37, 37, 0.60));
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+  width: 67%;
+}
+
+.org-images {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 12px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+.org-images div {
+  position: relative;
+}
+
+.org-badge {
+  padding: 10px;
+}
+
+.org-images div img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.org-images-wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.org-names {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 60px;
+  left: 12px;
+  max-width: 90%;
+}
+
+.org-names div {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 4px 10px;
+  width: 25%;
+}
+.org-names h4 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 18px;
+}
+
+.org-names p {
+  color: var(--black-80);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  width: 51%
+}
+
+.arrow {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;  
+  align-items: center;
+  border-radius: 100px;
+  background: var(--grey);
+}
+
+.arrow:hover {
+  background-color: var(--grey-hover);
+}
+
+.arrow-1 {
+  position: absolute;
+  left: -90px;
+  bottom: 200px;
+}
+.arrow-2 {
+  position: absolute;
+  right: -90px;
+  bottom: 200px;
+}
+
+.active_tablet {
+  background-color: var(--primary);
+}
+
+.active_tablet:hover {
+  background-color: var(--primary);
+}
+
+.active_tablet h3, .active_tablet p {
+  color: var(--white);
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+  .organizing-team {
+    width: 90%;
+    margin: 80px auto 0;
+  }
+  .organizing-team .title .stroke {
+    min-width: 25%;
+  }
+  .org-tablets {
+    width: 100%;
+    margin: 25px 0 54px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+    position: relative;
+  }
+  .org-tablet {
+    width: calc(50% - 4px);
+    border-radius: 12px;
+  }
+  .org-tablet p {
+    display: none;
+  }
+  .active_tablet p {
+    display: flex;
+    text-align: left;
+    position: absolute;
+    bottom: -40px;
+    left: 5px;
+    color: var(--black-80);
+    font-family: "Franklin Gothic Book", sans-serif;
+    font-size: 14px;
+  }
+  .arrow {
+    display: none;
+  }
+
+  .org-images div img {
+    width: 100%;
+  }
+  .org-names {
+    padding: 8px 16px;
+    min-width: 40%;
+    aspect-ratio: 2/1;
+  }
+  .org-names {
+    display: none;
+  }
+  .mentors-team .org-images {
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+  }
+  .mentors-team .org-images div {
+    width: 100%;
+  }
+  .mentors-team .org-images div div {
+    width: 40%;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .organizing-team .title .stroke {
+    width: 65%;
+  }
+  .org-tablets {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+  .org-tablet {
+    width: calc(25% - 8px);
+  }
+  .org-tablet h3 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .org-tablet p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .org-images div {
+    min-width: calc(50% - 8px);
+  }
+  .org-images div img {
+    width: 100%;
+  }
+  .organizing-team {
+    margin: 100px auto 0;
+  }
+  .mentors-team .org-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .mentors-team .org-images div {
+    width: calc(50% - 8px);
+  }
+}

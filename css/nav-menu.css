@@ -1,0 +1,119 @@
+.nav-bar {
+  width: 90%;
+  margin: 20px auto 0;
+}
+
+.nav-logo {
+  width: 38%;
+  aspect-ratio: 4/1;
+}
+
+
+.menu {
+  display: none;
+}
+
+.nav-btn {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  transition: all 0.7s ease-in-out;
+  background-color: var(--white);
+  z-index: 2;
+  margin: 0;
+  overflow-y: hidden;
+}
+
+#open {
+  display: flex;
+  flex-direction: column  ;
+  align-items: center;
+  justify-content: space-between;
+  width: 20px;
+  height: 15px;
+  padding: 1px;
+}
+
+#open div {
+  width: 20px;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: 20px;
+  margin: 1px;
+}
+
+.sidebar ul {
+  padding: 0; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  font-family: "Franklin Gothic Medium";
+  font-size: 20px;
+}
+
+.show-sidebar {
+  right: 0;
+}
+
+.nav-btn-menu {
+  border: none;
+  background: var(--primary);
+  border-radius: 30px;
+  color: white;
+  width: 80%;
+  padding: 10px 0;
+  font-size: 18px;
+  font-family: "Franklin Gothic Demi",sans-serif;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  font: 16px "Franklin Gothic Medium", sans-serif;
+}
+
+.nav-btn-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-btn-menu:hover {
+  background: var(--primary-dark);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+#close img{
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+.diactivate {
+  display: none;
+}

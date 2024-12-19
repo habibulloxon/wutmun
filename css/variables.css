@@ -1,0 +1,24 @@
+:root {
+  --primary: #024890;
+  --primary-dark: #024080;
+  --black-80: #252525cc;
+  --black: #252525;
+  --grey: #eeeeee;
+  --yellow: #f5b706;
+  --white: #fff;
+  --grey-hover: #e2e2e2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}

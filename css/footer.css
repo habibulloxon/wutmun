@@ -1,0 +1,324 @@
+.footer {
+  border-radius: 20px 20px 0 0;
+  background-color: var(--primary);
+  margin-top: 120px;
+  max-width: 100%;
+  padding: 60px 50px 20px;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.footer-main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo-column {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+
+.footer-logo {
+  width: 210px;
+  height: 147px;
+}
+
+.footer-info-column {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 52%;
+  margin-left: 20px;
+}
+
+.footer-info {
+  margin-top: 9px;
+  flex-grow: 1;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font: 400 20px/1.2 "Franklin Gothic Book", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.contact-item {
+  margin-top: 12px;
+}
+
+.contact-item:first-child {
+  margin-top: 0;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-list li {
+  margin-top: 12px;
+}
+
+.footer-nav-list li:first-child {
+  margin-top: 0;
+}
+
+.footer-nav-list a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font: 400 16px/1 "Franklin Gothic Book", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.footer-cta-column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-left: 20px;
+}
+
+.footer-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-register-button {
+  display: inline-block;
+  border-radius: 100px;
+  background-color: var(--white);
+  color: var(--primary);
+  text-decoration: none;
+  padding: 12px 60px;
+  font: 30px "Franklin Gothic Medium", sans-serif;
+}
+
+.footer-register-button:hover {
+  background-color: #e2e2e2;
+}
+.footer-nav-list a:hover {
+  color: #e2e2e2;
+}
+
+.register-deadline {
+  color: #fff;
+  text-align: center;
+  margin-top: 8px;
+  font: 20px "Franklin Gothic Book", sans-serif;
+}
+
+.footer-bottom {
+  display: flex;
+  margin-top: 45px;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-legal {
+  margin-top: 70px;
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  align-items: start;
+  color: rgba(255, 255, 255, 0.8);
+  font: 400 16px "Franklin Gothic Book", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+
+.footer-legal a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-social {
+  display: flex;
+  width: 19%;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.social-icon:hover {
+  fill: #e2e2e2;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+  .footer {
+    width: 100%;
+    margin-top: 38px;
+    padding: 20px 0 4px;
+  }
+  .footer-main {
+    width: 90%;
+    margin: 0 auto 21px;
+  }
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+  }
+  .footer-logo-column {
+    order: 1;
+    align-items: center;
+  }
+  .footer-cta-column {
+    min-width: 90%;
+    order: 2;
+    align-items: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+  }
+  .footer-info-column {
+    flex-direction: column;
+    align-items: center;
+    order: 3;
+  }
+  .footer-logo {
+    min-width: 130px;
+    min-height: 90px;
+  }
+  .footer-register-button {
+    display: flex;
+    width: 335px;
+    padding: 8px 60px;
+    justify-content: center;
+    align-items: center;
+  }
+  .register-deadline {
+    color: var(--white);
+    text-align: center;
+    font-family: "Franklin Gothic Book", sans-serif;
+    font-size: 16px;
+  }
+  .footer-contact {
+    text-align: center;
+    color: var(--white);
+    font-family: "Franklin Gothic Book", sans-serif;
+    font-size: 16px;
+  }
+  .footer-nav-list {
+    align-items: center;
+    margin: 0 auto;
+  }
+  .footer-legal {
+    align-items: center;
+    order: 2;
+  }
+  .footer-social {
+    width: auto;
+    order: 1;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    padding: 20px 40px 10px;
+    margin: 60px 0 0;
+    position: relative;
+  }
+  .footer-main {
+    margin-bottom: 80px;
+  }
+  .footer-main {
+    width: 100%;
+  }
+  .footer-columns {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 30px;
+  }
+  .footer-info-column {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+    width: 25%;
+  }
+  .footer-info {
+    position: absolute;
+    left: 40px;
+    top: 40%;
+    width: 180px;
+    height: 100px;
+  }
+  .footer-contact {
+    align-items: start;
+  }
+  .contact-item {
+    text-align: left;
+    font-family: "Franklin Gothic Book", sans-serif;
+    font-size: 16px;
+  }
+  .footer-logo-column {
+    order: 1;
+  }
+  .footer-cta-column {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    width: fit-content;
+    min-width: 25%;
+  }
+  .footer-register-button {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-logo {
+    width: 109px;
+    height: 77px;
+  }
+  .footer-nav-list {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .footer-cta {
+    width: fit-content;
+  }
+  .footer-links {
+    margin-top: 0;
+  }
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    height: 72px;
+  }
+  .footer-legal {
+    order: 1;
+  }
+  .footer-social {
+    align-self: flex-start;
+  }
+}
