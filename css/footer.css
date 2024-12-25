@@ -29,8 +29,7 @@
 }
 
 .footer-logo {
-  width: 210px;
-  height: 147px;
+  width: 11.61vw;
 }
 
 .footer-info-column {
@@ -132,7 +131,7 @@
   margin: 0 auto;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
 }
 
 .footer-legal {
