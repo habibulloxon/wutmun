@@ -45,12 +45,39 @@
   .register-button:hover {
     background: #123660;
   }
+
+  .nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-width: 120px;
+    padding: 5px;
+  }
+
+  .logo-item {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 1024px) {
+    .nav-logo {
+      max-width: 100px;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .nav-logo {
+      max-width: 80px;
+    }
+  }
 </style>
 
 <body>
   <nav class="nav-bar">
     <div class="nav-logo">
-      <img src="images/main-logo.png" class="logo-item" />
+      <img src="images/main-logo.png" alt="Main Logo" class="logo-item" />
     </div>
     <ul class="menu">
       <li>
@@ -63,12 +90,9 @@
         <a href="#faq">FAQ</a>
       </li>
     </ul>
-    <!-- <div id="open">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div> -->
-    <a class="register-button" style="background-color: #FFF; color: #123660;" href="https://docs.google.com/forms/d/e/1FAIpQLSeJ0gY-FVzQSPhBoJjqiEGgLi14cprHFe0jdX7rrylOqsxMkw/viewform?usp=sf_link" target="_blank">Register</a>
+    <a class="register-button" style="background-color: #FFF; color: #123660;"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSeJ0gY-FVzQSPhBoJjqiEGgLi14cprHFe0jdX7rrylOqsxMkw/viewform?usp=sf_link"
+      target="_blank">Register</a>
   </nav>
   <nav>
     <div class="sidebar">
@@ -83,7 +107,9 @@
           <a href="#faq">FAQ</a>
         </li>
       </ul>
-      <a class="register-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeJ0gY-FVzQSPhBoJjqiEGgLi14cprHFe0jdX7rrylOqsxMkw/viewform?usp=sf_link" target="_blank">Register</a>
+      <a class="register-button"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeJ0gY-FVzQSPhBoJjqiEGgLi14cprHFe0jdX7rrylOqsxMkw/viewform?usp=sf_link"
+        target="_blank">Register</a>
       <div id="close">
         <img src="images/x-icon.svg" />
       </div>
@@ -101,8 +127,9 @@
       </div>
       <div class="registration">
         <p>Registration: Dec 20 - Jan 15</p>
-        <a class="register-button" style="width: 90%; text-align: center;" href="https://docs.google.com/forms/d/e/1FAIpQLSeJ0gY-FVzQSPhBoJjqiEGgLi14cprHFe0jdX7rrylOqsxMkw/viewform?usp=sf_link"
-            target="_blank">Register</a>
+        <a class="register-button" style="width: 90%; text-align: center;"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeJ0gY-FVzQSPhBoJjqiEGgLi14cprHFe0jdX7rrylOqsxMkw/viewform?usp=sf_link"
+          target="_blank">Register</a>
         <p class="telegram-link">
           <a href="https://t.me/wutmun" target="_blank">Join Telegram Channel</a>
         </p>
@@ -262,7 +289,9 @@
         <div class="question-answer">
           <h3>Who can participate?</h3>
           <p class="answer">
-            Any student who has achieved at least an intermediate proficiency in English, demonstrating a solid understanding of the language and the ability to engage in conversations and comprehend various texts, is eligible to participate.
+            Any student who has achieved at least an intermediate proficiency in English, demonstrating a solid
+            understanding of the language and the ability to engage in conversations and comprehend various texts, is
+            eligible to participate.
           </p>
           <div class="plus">
             <img src="./images/plus.svg" class="img-plus" />
@@ -284,7 +313,8 @@
         <div class="question-answer">
           <h3>What does participation fee cover?</h3>
           <p class="answer">
-            The participation fee will cover lunch, a coffee break, administrative expenses, and awards for delegates on both days. This investment guarantees a rewarding experience!
+            The participation fee will cover lunch, a coffee break, administrative expenses, and awards for delegates on
+            both days. This investment guarantees a rewarding experience!
           </p>
           <div class="plus">
             <img src="./images/plus.svg" class="img-plus" />
@@ -302,9 +332,7 @@
       <div class="footer-main">
         <div class="footer-columns">
           <div class="footer-logo-column">
-            <img loading="lazy"
-              src="images/main-logo.png"
-              alt="MUN Logo" class="footer-logo" />
+            <img loading="lazy" src="images/main-logo.png" alt="MUN Logo" class="footer-logo" />
           </div>
           <div class="footer-info-column">
             <div class="footer-info">
